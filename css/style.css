@@ -220,6 +220,7 @@ header {
   align-items: center;
 }
 .menu-desktop .menu-item {
+  position: relative;
   margin-left: 16px;
 }
 
@@ -237,12 +238,58 @@ header {
   height: 7px;
   transform: rotate(45deg);
   border-radius: 1px;
-  transition: 0.2s linear;
+  transition: 0.1s linear;
   border-bottom: 2px solid #82269E;
   border-right: 2px solid #82269E;
 }
 .nav-link-desktop:hover::after {
   top: 45%;
+}
+
+.dropdown-menu {
+  background-color: #FEFBFF;
+  border-radius: 16px;
+  padding: 16px 24px;
+  box-shadow: 0px 51px 80px rgba(169, 80, 196, 0.08), 0px 15.3750076294px 24.1176586151px rgba(169, 80, 196, 0.05), 0px 2.3096878529px 3.6230399609px rgba(169, 80, 196, 0.03), 0px 6.3859915733px 10.017241478px rgba(169, 80, 196, 0.04);
+  list-style: none;
+  position: absolute;
+  top: 48px;
+  left: 24px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s ease;
+}
+.dropdown-menu .dropdown-item {
+  width: 100%;
+}
+
+.active-dropdown-menu {
+  pointer-events: all;
+  opacity: 1;
+}
+
+.nav-link-dropdown {
+  display: inline-block;
+  width: 100%;
+  padding: 8px 16px;
+  position: relative;
+}
+.nav-link-dropdown::after {
+  content: "";
+  position: absolute;
+  top: 90%;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #A950C4;
+  transition: 0.5s ease;
+}
+.nav-link-dropdown:hover::after {
+  width: 100%;
 }
 
 .navbar-mobile {
