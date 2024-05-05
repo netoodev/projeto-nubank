@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/svg-inject.min.js"></script>
   </head>
   <body>
     <!-- ======== HEADER ======== -->
@@ -18,14 +19,22 @@
         <!-- ======== NAVBAR MOBILE ======== -->
         <nav class="navbar-mobile">
             <div class="bx" id="bx"></div>
-            <div class="logo"></div>
+            <div class="logo">
+                <a href="#">
+                    <img src="svg/logonu.svg" onload="SVGInject(this)" alt="">
+                </a>
+            </div>
             <a href="#" style="z-index: 999;">Login</a>
         </nav>
         
         <!-- ======== NAVBAR DESKTOP ======== -->
         <nav class="navbar-desktop">
             <div class="navbar-desktop-item-1">
-                <div class="logo"></div>
+                <div class="logo">
+                    <a href="#">
+                        <img src="svg/logonu.svg" onload="SVGInject(this)" alt="">
+                    </a>
+                </div>
                 <ul class="menu-desktop">
 
                     <!-- ======== NAV-LINK-1 ======== -->
@@ -73,6 +82,9 @@
                 <li><a href="#" class="nav-link-mobile">Pra você</a></li>
                 <li><a href="#" class="nav-link-mobile">Quero ser Nubank</a></li>
                 <li><a href="#" class="nav-link-mobile">Redes Sociais</a></li>
+                <li>
+                    
+                </li>
             </ul>
         </nav>
 
