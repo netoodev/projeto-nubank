@@ -176,6 +176,20 @@
   }
 }
 
+.bg-invite {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.svg-invite {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
 h1 {
   color: #161617;
   font-family: "Sora", sans-serif;
@@ -285,7 +299,7 @@ strong {
 }
 
 .text-center {
-  text-align: ce;
+  text-align: center;
 }
 
 a {
@@ -1466,5 +1480,30 @@ header {
     stroke-width: 4;
     stroke-dasharray: 400 0;
     stroke-opacity: 1;
+  }
+}
+.fignu5-ball1 {
+  animation: translate-ball 3s ease infinite alternate;
+}
+
+.fignu5-ball2 {
+  animation: translate-ball 3s ease 0.5s infinite alternate;
+}
+
+.fignu5-ball3 {
+  animation: translate-ball 3s ease 1s infinite alternate;
+}
+
+.fignu5-ball4 {
+  animation: translate-ball 3s ease 1.5s infinite alternate;
+}
+
+.fignu5-ball5 {
+  animation: translate-ball 3s ease 2s infinite alternate;
+}
+
+@keyframes translate-ball {
+  0% {
+    transform: translate3d(0px, 150px, 0);
   }
 }/*# sourceMappingURL=style.css.map */

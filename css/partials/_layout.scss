@@ -138,6 +138,7 @@ $container-s: 540px;
     overflow: hidden;
 }
 
+
 //  HERO
 
 .hero {
@@ -235,4 +236,25 @@ $container-s: 540px;
         justify-content: center;
         align-items: center;
     }
+}
+
+// INVITE
+
+.bg-invite {
+    height: 100vh;
+
+    overflow: hidden;
+}
+
+.svg-invite {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 100%;
+
+    transform: translate(-50%, -50%);
+    
+    z-index: -1;
+    
 }

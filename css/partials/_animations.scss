@@ -349,3 +349,31 @@ $height-card: 0.64 * $width-card;
         stroke-opacity: 1;
     }
 }
+
+// FIGNU5
+
+.fignu5-ball1 {
+    animation: translate-ball 3s ease infinite alternate
+}
+
+.fignu5-ball2 {
+    animation: translate-ball 3s ease .5s infinite alternate
+}
+
+.fignu5-ball3 {
+    animation: translate-ball 3s ease 1s infinite alternate
+}
+
+.fignu5-ball4 {
+    animation: translate-ball 3s ease 1.5s infinite alternate
+}
+
+.fignu5-ball5 {
+    animation: translate-ball 3s ease 2s infinite alternate
+}
+
+@keyframes translate-ball {
+    0%{
+        transform: translate3d(0px,150px,0);
+    }
+}
